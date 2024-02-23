@@ -98,7 +98,7 @@
     #define Y_MIN_PIN                      P1_28  // Y-STOP
   #endif
   #ifndef Y_MAX_PIN
-    #define Y_MAX_PIN                      P1_25  // E1DET
+    #define Y_MAX_PIN                      P1_28  // E1DET
   #endif
 #else
   #define Y_STOP_PIN                       P1_28  // Y-STOP
