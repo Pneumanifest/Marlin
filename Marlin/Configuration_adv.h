@@ -1858,7 +1858,7 @@
    * [1] On AVR an interrupt-capable pin is best for UHS3 compatibility.
    */
   #if !MB(BTT_SKR_V1_4)
-    #define USB_FLASH_DRIVE_SUPPORT
+   // #define USB_FLASH_DRIVE_SUPPORT
   #endif
   #if ENABLED(USB_FLASH_DRIVE_SUPPORT)
     /**
