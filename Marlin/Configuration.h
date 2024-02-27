@@ -1421,9 +1421,9 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-#ifdef B1_USE_BLTOUCH
-  #define BLTOUCH
-#endif
+
+ // #define BLTOUCH
+
 
 /**
  * MagLev V4 probe by MDD
@@ -1664,9 +1664,9 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#ifdef B1_USE_BLTOUCH
+
   #define MULTIPLE_PROBING 2
-#endif
+
 //#define EXTRA_PROBING    1
 
 /**
@@ -1723,7 +1723,7 @@
 //#define PROBING_FANS_OFF          // Turn fans off when probing
 //#define PROBING_ESTEPPERS_OFF     // Turn all extruder steppers off when probing
 //#define PROBING_STEPPERS_OFF      // Turn all steppers off (unless needed to hold position) when probing (including extruders)
-//#define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
+#define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
 
 // Require minimum nozzle and/or bed temperature for probing
 //#define PREHEAT_BEFORE_PROBING
@@ -2061,11 +2061,10 @@
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_UBL
-#ifdef B1_USE_BLTOUCH
+
   #define AUTO_BED_LEVELING_BILINEAR
-#else
-  #define MESH_BED_LEVELING
-#endif
+
+  //#define MESH_BED_LEVELING
 
 /**
  * Commands to execute at the end of G29 probing.
